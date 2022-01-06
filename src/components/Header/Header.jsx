@@ -1,6 +1,6 @@
 import './Header.css'
 
-function Header() {
+function Header(props) {
     return <header className="header">
         <div className="left-menu">
             <svg className="menu-icon" focusable="false" viewBox="0 0 24 24">
@@ -14,7 +14,7 @@ function Header() {
         </div>
 
         <div className="search">
-            <input className="search-bar" placeholder="Search mail" />
+            <input className="search-bar" placeholder="Search mail" onChange={event => props.setSearch(event.target.value)} />
         </div>
     </header>
 }

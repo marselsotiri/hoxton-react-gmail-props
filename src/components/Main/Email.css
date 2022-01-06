@@ -1,15 +1,4 @@
-.app > .emails {
-    grid-area: emails;
-    padding: 10px 0;
-  }
-  
-  .app > .emails > ul {
-    list-style: none;
-    display: grid;
-  }
-  
-  
-  .email {
+.email {
     display: grid;
     grid-template-columns: 30px 30px 150px 1fr;
     padding: 10px;
